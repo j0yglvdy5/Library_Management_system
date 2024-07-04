@@ -1,4 +1,3 @@
-
 from sqlalchemy.orm import Session
 from .models import Author, Book, Borrower
 from .db import SessionLocal
@@ -32,3 +31,5 @@ def create_borrower(db: Session, name: str, email: str):
     db.commit()
     db.refresh(borrower)
     return borrower
+
+

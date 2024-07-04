@@ -1,6 +1,5 @@
 
 import click
-from sqlalchemy.orm import Session
 from library.db import SessionLocal, engine, Base
 from library.models import Author, Book, Borrower
 
